@@ -22,15 +22,15 @@ func wordSort(str: String){
     
     // make dictionary (words, with numbers)
     var charMap = [String: Int]()
-
+    
     for word in stray {
         let fixedWord = String(word)
         if charMap[fixedWord] != nil {
             var newValue = charMap[fixedWord]! + 1
             charMap.updateValue(newValue, forKey: fixedWord)
-    }
-    else { charMap[fixedWord] = 1 }
-
+        }
+        else { charMap[fixedWord] = 1 }
+        
     }
     
     // sort by number of words
@@ -42,7 +42,7 @@ func wordSort(str: String){
         print("\(count). \(word.key) – \(word.value)")
         count += 1
     }
-
+    
 }
 
 
