@@ -1,3 +1,7 @@
-print("Hello, Swift!")
+import CryptoSwift
+
+
+
+print("Hello, Swift!" .sha256())
 
 sayHello()
