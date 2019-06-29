@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swiftBootcamp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tL1-UH-eHB">
+                                <rect key="frame" x="78" y="98" width="218" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2p-EJ-7OU">
+                                <rect key="frame" x="101" y="140" width="137" height="70"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ff-Fk-o5o">
+                                        <rect key="frame" x="20" y="20" width="97" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5ff-Fk-o5o" firstAttribute="centerY" secondItem="M2p-EJ-7OU" secondAttribute="centerY" id="651-lZ-Zz3"/>
+                                    <constraint firstItem="5ff-Fk-o5o" firstAttribute="centerX" secondItem="M2p-EJ-7OU" secondAttribute="centerX" id="GBg-o3-dNS"/>
+                                    <constraint firstItem="5ff-Fk-o5o" firstAttribute="leading" secondItem="M2p-EJ-7OU" secondAttribute="leading" constant="20" id="ci9-o7-fQz"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3R-8j-aIB">
+                                <rect key="frame" x="146" y="238" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1O-E7-TJK"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20190601_111338_2.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1w1-YJ-g27">
+                                <rect key="frame" x="16" y="276" width="352" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="YgB-wa-Wh6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M2p-EJ-7OU" secondAttribute="trailing" constant="137" id="65K-Ed-Buu"/>
+                            <constraint firstItem="M2p-EJ-7OU" firstAttribute="centerX" secondItem="k3R-8j-aIB" secondAttribute="centerX" id="E11-Ki-ZbO"/>
+                            <constraint firstItem="tL1-UH-eHB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kro-KP-LGJ"/>
+                            <constraint firstItem="tL1-UH-eHB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="Ny7-yv-2RK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1w1-YJ-g27" secondAttribute="trailing" constant="7" id="VMN-PA-k8A"/>
+                            <constraint firstItem="M2p-EJ-7OU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="cHm-Fu-WiU"/>
+                            <constraint firstItem="1w1-YJ-g27" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cd7-zR-zEh"/>
+                            <constraint firstItem="1w1-YJ-g27" firstAttribute="top" secondItem="k3R-8j-aIB" secondAttribute="bottom" constant="8" symbolic="YES" id="mpp-BW-nD9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1w1-YJ-g27" secondAttribute="bottom" constant="192" id="nLT-ta-HRo"/>
+                            <constraint firstItem="k3R-8j-aIB" firstAttribute="top" secondItem="M2p-EJ-7OU" secondAttribute="bottom" constant="28" id="qct-ft-5YI"/>
+                            <constraint firstItem="k3R-8j-aIB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="tld-lu-OZr"/>
+                            <constraint firstItem="tL1-UH-eHB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="x65-sM-yOZ"/>
+                            <constraint firstItem="M2p-EJ-7OU" firstAttribute="top" secondItem="tL1-UH-eHB" secondAttribute="bottom" constant="21" id="xdp-Ne-jOI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="tL1-UH-eHB" id="y13-Zq-Hnf"/>
+                        <outlet property="textBox" destination="5ff-Fk-o5o" id="sjn-av-o7F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="126.38680659670166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="20190601_111338_2.jpg" width="4656" height="3492"/>
+    </resources>
+</document>
